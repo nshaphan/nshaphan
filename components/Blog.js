@@ -13,7 +13,7 @@ export default function Blog({ posts }) {
       <div className="bg-[#F1F1F1] dark:bg-gray-900">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-10 pb-40">
           {posts?.map((post, idx) => (
-            <PostCard post={post} index={idx} />
+            <PostCard post={post} key={idx} />
           ))}
         </div>
       </div>
@@ -26,7 +26,6 @@ const PostCard = ({ post, index }) => {
     <Link
       href={"/blog/" + post.slug}
       passHref
-      key={index}
       className="font-semibold group flex flex-row space-x-2 w-full items-center"
     >
       <div className="github-repo shadow hover:bg-gray-200 dark:hover:bg-gray-700 p-10 rounded-lg cursor-pointer">
