@@ -194,9 +194,9 @@ export default function Navbar() {
         </div>
       </div>
       <div className="space-x-8 block md:hidden mt-4">
-        <Link href="/about">
+        <Link href="/blog">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-            About
+            Articles
           </a>
         </Link>
         <Link href="/projects">
@@ -204,14 +204,9 @@ export default function Navbar() {
             Projects
           </a>
         </Link>
-        <Link href="/experience">
+        <Link href="/about">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-            Experience
-          </a>
-        </Link>
-        <Link href="/contact">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-            Contact
+            About Me
           </a>
         </Link>
       </div>
