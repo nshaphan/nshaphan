@@ -25,7 +25,7 @@ export default function Blog({ posts }) {
 const PostCard = ({ post, index }) => {
   return (
     <Link
-      href={`${prefix}/blog/${post.slug}`}
+      href={`blog/${post.slug}`}
       passHref
       className="font-semibold group flex flex-row space-x-2 w-full items-center"
     >
