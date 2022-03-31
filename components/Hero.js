@@ -1,5 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
+import { prefix } from "@constants/prefix"
 
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
@@ -21,7 +22,7 @@ export default function Hero() {
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40">
         <div className="w-3/4 my-4">
-          <img src={userData.avatarUrl} alt="avatar" width={500} height={500}/>
+          <img src={`${prefix}${userData.avatarUrl}`} alt="avatar"/>
         </div>
       </div>
     </div>
