@@ -8,8 +8,8 @@ import matter from "gray-matter";
 export default function Home({ posts }) {
   return (
     <ContainerBlock
-      title="Manu Arora - Developer, Writer, Creator"
-      description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+      title="Shaphan - Software Engineer, Tech Enthusiast"
+      description="I am a software engineer, tech enthusiast, and a self-taught developer. I am currently working on a few projects and learning new things everyday."
     >
       <Hero />
       <LatestPosts posts={posts}/>

@@ -1,7 +1,6 @@
 import React from "react";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import { RainbowHighlight } from "./RainbowHighlight";
 import userData from "@constants/data";
+import Image from "next/image";
 
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
@@ -23,7 +22,12 @@ export default function Hero() {
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40">
         <div className="w-3/4 my-4">
-          <img src={userData.avatarUrl} alt="avatar" />
+          <Image
+            src={userData.avatarUrl}
+            alt="Shaphan Nzabonimana"
+            width={500}
+            height={500}
+          />
         </div>
       </div>
     </div>
