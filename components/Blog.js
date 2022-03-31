@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { prefix } from "@constants/prefix"
 
 export default function Blog({ posts }) {
   return (
@@ -24,7 +25,7 @@ export default function Blog({ posts }) {
 const PostCard = ({ post, index }) => {
   return (
     <Link
-      href={"/blog/" + post.slug}
+      href={`${prefix}/blog/${post.slug}`}
       passHref
       className="font-semibold group flex flex-row space-x-2 w-full items-center"
     >

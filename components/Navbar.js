@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
+import { prefix } from "@constants/prefix";
 
 export default function Navbar() {
   const router = useRouter();
@@ -33,16 +34,16 @@ export default function Navbar() {
         </div>
 
         <div className="space-x-8 hidden md:block">
-          <Link href="/blog">
+          <Link href={`${prefix}/blog`}>
             <a
               className={`text-base  ${
-                router.asPath === "/blog"
+                router.asPath === `${prefix}/blog`
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
             >
               Articles
-              {router.asPath === "/blog" && (
+              {router.asPath === `${prefix}/blog` && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -59,16 +60,16 @@ export default function Navbar() {
               )}
             </a>
           </Link>
-          <Link href="/projects">
+          <Link href={`${prefix}/projects`}>
             <a
               className={`text-base  ${
-                router.asPath === "/projects"
+                router.asPath === `${prefix}/projects`
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
             >
               Projects
-              {router.asPath === "/projects" && (
+              {router.asPath === `${prefix}/projects` && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -85,16 +86,16 @@ export default function Navbar() {
               )}
             </a>
           </Link>
-          <Link href="/about">
+          <Link href={`${prefix}/about`}>
             <a
               className={`text-base  ${
-                router.asPath === "/about"
+                router.asPath === `${prefix}/about`
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
             >
               About Me
-              {router.asPath === "/about" && (
+              {router.asPath === `${prefix}/about` && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
