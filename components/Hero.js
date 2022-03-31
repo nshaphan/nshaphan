@@ -1,12 +1,5 @@
 import React from "react";
 import userData from "@constants/data";
-import Image from "next/image";
-
-const myLoader = ({ src, width, quality }) => {
-  return `https://nshaphan.github.io/nshaphan/${src}?w=${width}&q=${
-    quality || 75
-  }`;
-};
 
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
@@ -28,13 +21,7 @@ export default function Hero() {
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40">
         <div className="w-3/4 my-4">
-          <Image
-            src={userData.avatarUrl}
-            alt="Shaphan Nzabonimana"
-            loader={myLoader}
-            width={500}
-            height={500}
-          />
+          <img src={userData.avatarUrl} alt="avatar" width={500} height={500}/>
         </div>
       </div>
     </div>

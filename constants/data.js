@@ -2,7 +2,7 @@ const userData = {
   githubUsername: "nshaphan",
   name: "Shaphan Nzabonimana",
   designation: "Full-Stack Developer",
-  avatarUrl: "/avatar-pink.png",
+  avatarUrl: "/nshaphan/avatar-pink.png",
   email: "shaphannzabonimana@gmail.com",
   phone: "+250 786 466 253",
   address: "Kigali, Rwanda.",
